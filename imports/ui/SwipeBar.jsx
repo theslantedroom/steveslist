@@ -16,6 +16,10 @@ import { ViewProfile } from './ViewProfile.jsx';
 
 import { useGlobalContext } from './GlobalContext';
 import { useContext } from 'react';
+import EventCard from './EventCard.jsx';
+import CheckboxEvent from './CheckboxEvent.jsx';
+import {AttendanceList} from './AttendanceList.jsx';
+
 
 
 
@@ -116,7 +120,7 @@ export default function FloatingActionButtonZoom() {
           aria-label="action tabs example"
         >
           <Tab label="Profile" {...a11yProps(0)} onClick={handleResetEditProfile}/>
-          <Tab label="Connections" {...a11yProps(1)} />
+          <Tab label="Events" {...a11yProps(1)} />
           <Tab label="Discover" {...a11yProps(2)} />
         </Tabs>
 
@@ -147,7 +151,15 @@ export default function FloatingActionButtonZoom() {
         </TabPanel>
 
         <TabPanel value={value} index={1} dir={theme.direction} className={classes.profilePanel}>
-          Connections
+          <div className='center'> 
+              <EventCard/>
+          </div>
+          <div className='center'><CheckboxEvent/></div>
+          <div className='center'><AttendanceList/></div>
+
+          
+          
+
         </TabPanel>
 
         <TabPanel value={value} index={2} dir={theme.direction} className={classes.profilePanel}>

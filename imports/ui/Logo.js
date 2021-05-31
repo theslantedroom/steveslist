@@ -3,7 +3,7 @@ import './logo.css';
 
 export const Logo = () => {
   return (<div>
-            <img className='logo' src='./logo.jpg'/>
+            <img className='logo' src='./logo.png'/>
          </div>
   );
 };

@@ -2,22 +2,11 @@ import React from 'react';
 import { Meteor } from 'meteor/meteor';
 import { MemberDb } from '/imports/db/MemberDb';
 import { useTracker } from 'meteor/react-meteor-data';
-import TextField from '@material-ui/core/TextField';
 import { makeStyles } from '@material-ui/core/styles';
-import { FormControl } from '@material-ui/core';
 
 import PermIdentityIcon from '@material-ui/icons/PermIdentity';
-import Divider from '@material-ui/core/Divider';
 import './ViewProfile.css';
 import Typography from '@material-ui/core/Typography';
-
-
-import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-
-
-
 
 
 
@@ -36,12 +25,8 @@ export const ViewProfile = () => {
   const user = useTracker(() => Meteor.user());
   const classes = useStyles();
 
-  // const [titleText, setTitleText] = useState("");
-  // const [locationText, setLocationText] = useState("");
-  // const [companyText, setCompanyText] = useState("");
-  // const [websiteText, setWebsiteText] = useState("");
 
-  // grads globals published user proflie
+  // grabs globals published user proflie
   const profile = Meteor.user().profile;
 
     //use a single useTracker to get data from users
@@ -60,6 +45,7 @@ export const ViewProfile = () => {
       return { ...noDataAvailable, isLoading: true };
     }
     const member = MemberDb.find({'userId' : user._id}).fetch();
+    console.log('member', member);
     return { member };
   });
 

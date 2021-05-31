@@ -2,10 +2,10 @@
   position: absolute;
   top: 05px;
   left: 05px;
-  width: 45vw;
+  /* width: 45vw; */
   object-fit: scale-down;
   float: left;
   height: 100%;
   float: right;
-  max-width: 400px;
+  max-width: 160px;
 }

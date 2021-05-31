@@ -17,11 +17,6 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const toggleChecked = ({ _id, isChecked }) =>
-  Meteor.call('tasks.setIsChecked', _id, !isChecked);
-
-const deleteTask = ({ _id }) => Meteor.call('tasks.remove', _id);
-
 
 export const TagList = () => {
     const classes = useStyles();
@@ -67,12 +62,12 @@ export const TagList = () => {
         }
         ).fetch();
 
+
     // returns the count of items not including completes, hideCompletedFilter holds query params for mongo
         const pendingTasksCount = TasksCollection.find(pendingOnlyFilter).count();
         return { tasks, pendingTasksCount };
     });
 
-    
     // returns either the pending count or an empty string
     const pendingTasksTitle = `${
         pendingTasksCount ? ` (${pendingTasksCount})` : ''

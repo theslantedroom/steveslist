@@ -2,13 +2,16 @@ import { Meteor } from 'meteor/meteor';
 import { Accounts } from 'meteor/accounts-base';
 import { TasksCollection } from '/imports/db/TasksCollection';
 import { MemberDb } from '/imports/db/MemberDb';
+import { EventsDb } from '/imports/db/EventsDb';
 // Task Methods for meteor
 import '/imports/api/memberDbMethods';
 import '/imports/api/taskMethods';
+import '/imports/api/eventsDbMethods';
 
 //  make sure your server is registering publications
 import '/imports/api/tasksPublications';
 import '/imports/api/memberDbPublications';
+import '/imports/api/eventsDbPublications';
 
 
 

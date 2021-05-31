@@ -2,6 +2,7 @@ import { Meteor } from 'meteor/meteor';
 import React, { useState } from 'react';
 import Input from '@material-ui/core/Input';
 import { makeStyles } from '@material-ui/core/styles';
+import EventCard from './EventCard.jsx'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -27,7 +28,10 @@ export const LoginForm = () => {
         Meteor.loginWithPassword(username, password);
     };
 
-    return (<form onSubmit={submit} className={classes.root}>
+    return (<>
+        <h2 className='center'>Existing Users Login</h2>
+    
+        <form onSubmit={submit} className={classes.root}>
 
         <Input 
             required
@@ -48,5 +52,13 @@ export const LoginForm = () => {
 
         <button type="submit">Log In</button>
         </form>
-    );
+        <hr/>
+        <h2 className="center">Upcoming Events</h2>
+
+        <div className='eventList'>
+
+          <EventCard/>
+          </div>
+        
+    </>);
 };

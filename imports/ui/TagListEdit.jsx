@@ -101,7 +101,7 @@ export const TagListEdit = () => {
                   {hideCompleted ? 'Show All' : 'Hide Marked'}
                 </button> */}
               </div>
-              {/* && is shortcircuit Operator Short circuiting means that in JavaScript when we are evaluating an AND expression (&&), if the first operand is false, JavaScript will short-circuit and not even look at the second operand.*/}
+              {/* && is shortcircuit Operator Short circuiting means that in JavaScript when we are evaluating an AND expression (&&), if the first operand is false, JavaScript will short-circuit and not even look at the second operand. */}
               {isLoading && <div className="loading">loading...</div>}
 
                 <div className={classes.root}>
