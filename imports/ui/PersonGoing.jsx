@@ -6,8 +6,8 @@ import Chip from '@material-ui/core/Chip';
 
 export const PersonGoing = ({ name }) => {
 
-  return (<div className='center'>
+  return (
 
       <Chip label={name} color="primary" />
-  </div>);
+  );
 };

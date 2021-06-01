@@ -40,17 +40,18 @@ export const AttendanceList = () => {
     // console.log('peoplegoing', peopleGoing);
 
   return (<div>
-            <h2>People Attending:</h2>
+            <h2 className='center'>People Attending:</h2>
           {peopleGoing ? (
             <Fragment>
               {isLoading && <div className="loading">loading...</div>}
 
-                <div>
+                <div className='center'>
                   {peopleGoing.map(person => (
                     <PersonGoing
                       key={person._id}
                       name={person.name}
                     />
+                    
                   ))}
                 </div>
               </Fragment>

@@ -210,6 +210,7 @@ header {
 }
 .center {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -220,4 +221,8 @@ header {
 
 .profileViewHr {
   vertical-align: text-top;
-} */ ;
+} */
+
+.flexy {
+  flex-wrap: wrap;
+}

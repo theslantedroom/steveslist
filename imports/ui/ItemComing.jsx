@@ -7,9 +7,7 @@ import Chip from '@material-ui/core/Chip';
 export const ItemComing = ({ task, onCheckboxClick, onDeleteClick  }) => {
     const text = `${task.text} (${task.name})`;
 
-  return (<div>
-
-
+  return (
       <Chip color="secondary" label={text} />
-  </div>);
+  );
 };
