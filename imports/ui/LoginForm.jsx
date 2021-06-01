@@ -28,8 +28,6 @@ export const LoginForm = () => {
       document.getElementById('loginButton').innerText = 'Checking Credentials';
       setTimeout(function(){ document.getElementById('loginButton').innerText = 'Invalid Login or Password'; }, 2000);
 
-
-
       // prevent refresh
       e.preventDefault();
       // authenticate your user with the provided inputs.

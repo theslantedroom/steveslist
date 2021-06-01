@@ -89,7 +89,7 @@ export default function FloatingActionButtonZoom() {
   const { profileEditView, toggleProfileEdit } = useGlobalContext();
 
 
-  console.log(' swipe return ctx', profileEditView);
+  // console.log(' swipe return ctx', profileEditView);
 
   const classes = useStyles();
   const theme = useTheme();

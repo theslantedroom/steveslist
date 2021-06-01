@@ -2,7 +2,7 @@ import { Meteor } from 'meteor/meteor';
 import React, { Fragment  } from 'react';
 import { useTracker } from 'meteor/react-meteor-data';
 import { EventsDb } from '/imports/db/EventsDb';
-import { PersonGoing } from './PersonGoing';
+import { PersonGoing } from './PersonGoing.jsx';
 
 
 export const AttendanceList = () => {
@@ -45,15 +45,15 @@ export const AttendanceList = () => {
             <Fragment>
               {isLoading && <div className="loading">loading...</div>}
 
-                <div className='center'>
                   {peopleGoing.map(person => (
                     <PersonGoing
                       key={person._id}
                       name={person.name}
+                      thisUserId={person.userId}
                     />
                     
                   ))}
-                </div>
+                <br></br>
               </Fragment>
               ) : (
                 <div>Loading</div>

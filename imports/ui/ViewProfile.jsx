@@ -35,7 +35,7 @@ export const ViewProfile = () => {
     // if no user logged in return empty array and 0 pending
     const noDataAvailable = { };
     if (!Meteor.user()) {
-      console.log('no user');
+      // console.log('no user');
       return noDataAvailable;
     }
     // sub to tasks
@@ -45,7 +45,7 @@ export const ViewProfile = () => {
       return { ...noDataAvailable, isLoading: true };
     }
     const member = MemberDb.find({'userId' : user._id}).fetch();
-    console.log('member', member);
+    // console.log('member', member);
     return { member };
   });
 
@@ -53,7 +53,7 @@ export const ViewProfile = () => {
   if (!isLoading && profile) {
 
     if (member.length === 0){
-      console.log('no membdata');
+      // console.log('no membdata');
       member = [{title: '', location: '', company: '', website: ''}]
     }
 

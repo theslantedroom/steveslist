@@ -10,3 +10,8 @@ import { MemberDb } from '/imports/db/MemberDb.js';
 Meteor.publish('memberDb', function publishTasks() {
   return MemberDb.find({ userId: this.userId });
 });
+
+
+Meteor.publish('userDetail', function publishTasks() {
+  return MemberDb.find({  });
+});

@@ -30,7 +30,7 @@ export const TaskForm = ({}) => {
 
       const peopleGoing = EventsDb.find({ userId: user._id }).fetch();
       let isGoing = false;
-      console.log('peopleGoing',peopleGoing);
+      // console.log('peopleGoing',peopleGoing);
 
       if (peopleGoing.length === 1) {
         isGoing = peopleGoing[0].amGoing;
@@ -39,11 +39,11 @@ export const TaskForm = ({}) => {
       return { isGoing };
   });
 
-  console.log('isGoingxxx',isGoing);
+  // console.log('isGoingxxx',isGoing);
 
 
   const handleSubmit = e => {
-    console.log('click add tag');
+    // console.log('click add tag');
     // prevents a refresh of browser
     e.preventDefault();
     // console.log('click',text);

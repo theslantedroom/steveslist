@@ -56,7 +56,7 @@ export default function EventCard() {
           </Avatar>
         }
 
-        title="New West BBQ and 20 year High School reunion at Foreshore Park"
+        title="New West BBQ and 20ish year High School reunion at Foreshore Park"
         subheader="July 17, 2021 - 12pm"
       />
       <CardMedia
@@ -66,8 +66,9 @@ export default function EventCard() {
       />
       <CardContent>
         <Typography variant="body2" color="textSecondary" component="p">
-          Let's get the old New West crew back together for a catch up. It's been around 20ish years since we graduated. Sign up and edit your profile to add something you will bring.
+          Let's get the old New West crew back together for a catch up.  Once you sign up, please edit your profile (just add anything you might bring) then go to the event page and check the 'I will be attending!' box! Expand for details.
         </Typography>
+
       </CardContent>
       <CardActions disableSpacing>
 
@@ -86,19 +87,20 @@ export default function EventCard() {
         <CardContent>
           <Typography paragraph>About:</Typography>
           <Typography paragraph>
-            July 17, 2021 - 12pm @ Burnaby Fraser Foreshore Park (7751 Fraser Park Dr).  Meet at the BBQ and picnic tables area by the field.
+            July 17, 2021 - 12pm @ Burnaby Fraser Foreshore Park (7751 Fraser Park Dr).  
+            On the river a stones throw from the New West/Burnaby border.
+            Meet at the BBQ and picnic tables area by the field.
           </Typography>
           <Typography paragraph>
-            On the river a stones throw from the New West/Burnaby border.
+            It's been around 20ish years since we graduated.
             There will be games and entertainment and whatever else shows up.
           </Typography>
-          <Typography paragraph>
-            Once you sign up, please edit your profile (just add anything you might bring) then go to the event page and check the 'I will be attending!' box!
-          </Typography>
+
 
           <Typography>
             Bring some food and cold beverages and enjoy this summer day.
-            Share this Link with the cool kids from New West in the early 2000's.
+            Please share this Link with the cool kids from New West in the early 2000's.
+            It's also my birthday party.
           </Typography>
           <Typography>
             <a target='blank' href="https://www.google.com/maps/place/Burnaby+Fraser+Foreshore+Park/@49.1840909,-122.9981268,14z/data=!4m9!1m2!2m1!1sforeshore+park+picnic!3m5!1s0x5485d8aefd62d4db:0xe01bc8b93dd3a1b1!8m2!3d49.1840909!4d-122.9806173!15sChVmb3Jlc2hvcmUgcGFyayBwaWNuaWOSAQ9lY29sb2dpY2FsX3Bhcms">See Map</a>

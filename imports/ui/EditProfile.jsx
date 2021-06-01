@@ -57,7 +57,7 @@ export const EditProfile = () => {
     // if no user logged in return empty array and 0 pending
     const noDataAvailable = { };
     if (!Meteor.user()) {
-      console.log('no user');
+      // console.log('no user');
       return noDataAvailable;
     }
     // subscription to memberDb
@@ -67,7 +67,7 @@ export const EditProfile = () => {
       return { ...noDataAvailable, isLoading: true };
     }
     const member = MemberDb.find({'userId' : user._id}).fetch();
-    console.log('return member');
+    // console.log('return member');
     return { member };
   });
 
@@ -77,7 +77,7 @@ export const EditProfile = () => {
   if (!isLoading && profile) {
 
     if (member.length === 0){
-      console.log('no membdata');
+      // console.log('no membdata');
       member = [{title: '', location: '', company: '', website: ''}]
     }
 

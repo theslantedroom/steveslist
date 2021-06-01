@@ -69,5 +69,18 @@ Meteor.methods({
         MemberDb.update({'userId' : user._id},{$set:{website : website }});
     }
   },
- 
+  'memberDb.addBlankData'( user ) {
+    check(user, String);
+
+    const exists = MemberDb.find({'userId' : user}).fetch();
+    if (exists.length === 0){
+        MemberDb.insert({
+        website: '',
+        location: '',
+        company: '',
+        createdAt: new Date,
+        userId: user,
+        })        
+    }
+  },
 });
