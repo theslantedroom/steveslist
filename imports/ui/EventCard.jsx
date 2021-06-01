@@ -66,7 +66,7 @@ export default function EventCard() {
       />
       <CardContent>
         <Typography variant="body2" color="textSecondary" component="p">
-          Let's get the old Nest West crew back together for a catch up. It's been about 20 years since we graduated. Sign up add something to bring.
+          Let's get the old New West crew back together for a catch up. It's been about 20 years since we graduated. Sign up add something to bring.
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
