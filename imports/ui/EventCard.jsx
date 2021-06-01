@@ -86,7 +86,7 @@ export default function EventCard() {
         <CardContent>
           <Typography paragraph>About:</Typography>
           <Typography paragraph>
-            I'm sure most of us are longing for form social interaction. Lets play and eat this day and be merry.
+            Lets play and eat and be merry.
           </Typography>
           <Typography paragraph>
             There will be games and entertainment and whatever else shows up.
