@@ -74,3 +74,6 @@ meteor deploy stevetest.meteorapp.com --free --mongo
 meteor whoami
 //wipe db
 meteor reset
+
+//error on build exit code 1
+meteor npm install --save babel-runtime

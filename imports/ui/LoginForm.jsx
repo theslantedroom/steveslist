@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Input from '@material-ui/core/Input';
 import { makeStyles } from '@material-ui/core/styles';
 import EventCard from './EventCard.jsx'
+import {AttendanceList} from './AttendanceList.jsx';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -56,9 +57,10 @@ export const LoginForm = () => {
         <h2 className="center">Upcoming Events</h2>
 
         <div className='eventList'>
-
           <EventCard/>
-          </div>
+        </div>
+        <div className='center'><AttendanceList/></div>
+
         
     </>);
 };

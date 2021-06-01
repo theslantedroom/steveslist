@@ -116,9 +116,9 @@ export default function PrimarySearchAppBar() {
       open={isMenuOpen}
       onClose={handleMenuClose}
     >
-      <MenuItem onClick={handleMenuClose}><Avatar className={classes.avatar} src="https://robohash.org/tre"  />Profile</MenuItem>
+      {/* <MenuItem onClick={handleMenuClose}><Avatar className={classes.avatar} src="https://robohash.org/tre"  />Profile</MenuItem>
       <MenuItem onClick={handleMenuClose}><AccountBoxIcon />My account</MenuItem>
-      <MenuItem onClick={handleMenuClose}><EmojiObjectsIcon />Dark Mode</MenuItem>
+      <MenuItem onClick={handleMenuClose}><EmojiObjectsIcon />Dark Mode</MenuItem> */}
       <MenuItem onClick={handleLogout}><ExitToAppIcon />Logout</MenuItem>
     </Menu>
   );
@@ -151,7 +151,7 @@ export default function PrimarySearchAppBar() {
         <p>Profile</p>
       </MenuItem>
 
-      <MenuItem >
+      {/* <MenuItem >
         <IconButton 
         size="small" 
         aria-label="x" 
@@ -163,10 +163,10 @@ export default function PrimarySearchAppBar() {
           </Badge>
         </IconButton>
         <p>Notifications</p>
-      </MenuItem>
+      </MenuItem> */}
 
           
-      <MenuItem onClick={handleDownloadApp}>
+      {/* <MenuItem onClick={handleDownloadApp}>
         <IconButton
           size="small"
           aria-label="account of current user"
@@ -179,8 +179,8 @@ export default function PrimarySearchAppBar() {
           <GetAppIcon />
         </IconButton>
         <p>Download App</p>
-      </MenuItem>
-
+      </MenuItem> */}
+{/* 
       <MenuItem >
         <IconButton
           size="small"
@@ -193,7 +193,7 @@ export default function PrimarySearchAppBar() {
           <LiveHelpIcon />
         </IconButton>
         <p>Help</p>
-      </MenuItem>
+      </MenuItem> */}
     </Menu>
   );
 
@@ -209,7 +209,7 @@ export default function PrimarySearchAppBar() {
                   <Logo />
                     <div className={classes.grow} />
                     <div className={classes.sectionDesktop}>
-                      <IconButton aria-label="Notificaion" >
+                      {/* <IconButton aria-label="Notificaion" >
                         <Badge badgeContent={0} color="secondary">
                           <NotificationsIcon />
                         </Badge>
@@ -225,7 +225,7 @@ export default function PrimarySearchAppBar() {
                         <Badge badgeContent={0} color="secondary">
                           <LiveHelpIcon />
                         </Badge>
-                      </IconButton>
+                      </IconButton> */}
                       
                       <IconButton
                         edge="end"
