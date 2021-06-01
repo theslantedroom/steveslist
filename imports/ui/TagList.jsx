@@ -77,7 +77,7 @@ export const TagList = () => {
     <div className="app">
             <div className="tag-header">
                   <h3>
-                    Tags
+                    I am Bringing:
                     {pendingTasksTitle}
                 </h3>
             </div>

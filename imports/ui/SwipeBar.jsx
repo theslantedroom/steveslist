@@ -19,6 +19,7 @@ import { useContext } from 'react';
 import EventCard from './EventCard.jsx';
 import CheckboxEvent from './CheckboxEvent.jsx';
 import {AttendanceList} from './AttendanceList.jsx';
+import {StuffList} from './StuffList.jsx';
 
 
 
@@ -121,7 +122,7 @@ export default function FloatingActionButtonZoom() {
         >
           <Tab label="Profile" {...a11yProps(0)} onClick={handleResetEditProfile}/>
           <Tab label="Events" {...a11yProps(1)} />
-          <Tab label="Discover" {...a11yProps(2)} />
+          <Tab label="Past Events" {...a11yProps(2)} />
         </Tabs>
 
 
@@ -156,6 +157,8 @@ export default function FloatingActionButtonZoom() {
           </div>
           <div className='center'><CheckboxEvent/></div>
           <div className='center'><AttendanceList/></div>
+          <div className='center'><StuffList/></div>
+
 
           
           
@@ -163,7 +166,7 @@ export default function FloatingActionButtonZoom() {
         </TabPanel>
 
         <TabPanel value={value} index={2} dir={theme.direction} className={classes.profilePanel}>
-          Discover
+          Just a Place Holder for now
         </TabPanel>
         
       </SwipeableViews>

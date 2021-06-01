@@ -56,17 +56,17 @@ export default function EventCard() {
           </Avatar>
         }
 
-        title="New West BBQ at Foreshore Park"
+        title="New West BBQ and 20 year High School reunion at Foreshore Park"
         subheader="July 17, 2021"
       />
       <CardMedia
         className={classes.media}
         image="./july17.jpg"
-        title="Paella dish"
+        title="20year"
       />
       <CardContent>
         <Typography variant="body2" color="textSecondary" component="p">
-          Let's get the old Nest West crew back together for a catch up. It's been about 20 years since we were kids. Bring your kids or dog or wife or partners and come hang.
+          Let's get the old Nest West crew back together for a catch up. It's been about 20 years since we graduated. Sign up add something to bring.
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
@@ -86,14 +86,12 @@ export default function EventCard() {
         <CardContent>
           <Typography paragraph>About:</Typography>
           <Typography paragraph>
-            I'm some most of us are longing for form social interaction. Lets play and eat this day and be merry.
+            I'm sure most of us are longing for form social interaction. Lets play and eat this day and be merry.
           </Typography>
           <Typography paragraph>
-            There will be games and entertainment:
+            There will be games and entertainment and whatever else shows up.
           </Typography>
-          <Typography paragraph>
-            Kubb - Soccer - Music - Football - Frisbee - Tag - Hide and Seek - and whatever else shows up 
-          </Typography>
+
           <Typography>
             Bring some food and cold beverages and enjoy this summer day.
           </Typography>

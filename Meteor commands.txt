@@ -76,4 +76,8 @@ meteor whoami
 meteor reset
 
 //error on build exit code 1
-meteor npm install --save babel-runtime
+meteor npm uninstall --save babel-runtime
+//updates meteor
+meteor update
+//updates packages
+meteor update --all-packages

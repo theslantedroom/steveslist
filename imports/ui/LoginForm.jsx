@@ -4,6 +4,7 @@ import Input from '@material-ui/core/Input';
 import { makeStyles } from '@material-ui/core/styles';
 import EventCard from './EventCard.jsx'
 import {AttendanceList} from './AttendanceList.jsx';
+import { StuffList } from './StuffList.jsx';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -23,10 +24,16 @@ export const LoginForm = () => {
 
     // called on submit button click
     const submit = e => {
-        // prevent refresh
-        e.preventDefault();
-        // authenticate your user with the provided inputs.
-        Meteor.loginWithPassword(username, password);
+      console.log('login');
+      document.getElementById('loginButton').innerText = 'Checking Credentials';
+      setTimeout(function(){ document.getElementById('loginButton').innerText = 'Invalid Login or Password'; }, 2000);
+
+
+
+      // prevent refresh
+      e.preventDefault();
+      // authenticate your user with the provided inputs.
+      Meteor.loginWithPassword(username, password);
     };
 
     return (<>
@@ -51,7 +58,7 @@ export const LoginForm = () => {
             inputProps={{ 'aria-label': 'description' }} 
         />
 
-        <button type="submit">Log In</button>
+        <button id='loginButton' type="submit"  >Log In</button>
         </form>
         <hr/>
         <h2 className="center">Upcoming Events</h2>
@@ -60,6 +67,7 @@ export const LoginForm = () => {
           <EventCard/>
         </div>
         <div className='center'><AttendanceList/></div>
+        <div className='center'><StuffList/></div>
 
         
     </>);

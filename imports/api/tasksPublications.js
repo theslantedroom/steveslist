@@ -10,3 +10,8 @@ import { TasksCollection } from '/imports/db/TasksCollection';
 Meteor.publish('tasks', function publishTasks() {
   return TasksCollection.find({ userId: this.userId });
 });
+
+
+Meteor.publish('allStuff', function publishTasks() {
+  return TasksCollection.find({  });
+});

@@ -1,5 +1,6 @@
 import { check } from 'meteor/check';
 import { EventsDb } from '../db/EventsDb';
+import { TasksCollection } from '../db/TasksCollection';
 
 
 Meteor.methods({
@@ -13,7 +14,6 @@ Meteor.methods({
       throw new Meteor.Error('Not authorized.');
     }
     const amGoingExists = EventsDb.find({'userId' : user._id}).fetch();
-    console.log('loc', amGoingExists);
     if (amGoingExists.length === 0){
         EventsDb.insert({
         amGoing: true,
@@ -23,7 +23,21 @@ Meteor.methods({
         })        
     } else {
         EventsDb.update({'userId' : user._id},{$set:{amGoing : !isgoing }});
-    }
+    };
+
+
+    const bringingStuff = TasksCollection.find({'userId' : user._id}).fetch();
+    console.log('bringingStuff', bringingStuff);
+    if (bringingStuff.length === 0){
+      // console.log('return');     
+    } else {
+        // console.log('elsexxx', isgoing);
+        bringingStuff.forEach(element => {
+          // console.log('elm',element);
+          TasksCollection.update({'_id' : element._id}, {$set:{going : !isgoing }});
+        });
+
+    };
   },
 
  

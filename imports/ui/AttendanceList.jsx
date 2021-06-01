@@ -37,7 +37,7 @@ export const AttendanceList = () => {
     
 
     
-    console.log('peoplegoing', peopleGoing);
+    // console.log('peoplegoing', peopleGoing);
 
   return (<div>
             <h2>People Attending:</h2>

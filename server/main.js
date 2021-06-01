@@ -20,12 +20,12 @@ const SEED_USERNAME = '1@1.com';
 const SEED_PASSWORD = '1';
 
 // put a task into DB
-const insertTask = (taskText, user) => 
-TasksCollection.insert({ 
-  text: taskText,
-  userId: user._id, 
-  createdAt: new Date(),
-});
+// const insertTask = (taskText, user) => 
+// TasksCollection.insert({ 
+//   text: taskText,
+//   userId: user._id, 
+//   createdAt: new Date(),
+// });
 
 
  
@@ -47,13 +47,13 @@ Meteor.startup(() => {
 
 
   // grab user creds from DB
-  const user = Accounts.findUserByUsername(SEED_USERNAME);
+  // const user = Accounts.findUserByUsername(SEED_USERNAME);
 
   // if DB is empty create some starter data
-  if (TasksCollection.find().count() === 0) {
-    [
-      'First tag',
-      'Second tag'
-    ].forEach((taskText) => insertTask(taskText, user));
-  }
+  // if (TasksCollection.find().count() === 0) {
+  //   [
+  //     'First tag',
+  //     'Second tag'
+  //   ].forEach((taskText) => insertTask(taskText, user));
+  // }
 });
