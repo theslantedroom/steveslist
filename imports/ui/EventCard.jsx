@@ -92,6 +92,9 @@ export default function EventCard() {
             On the river a stones throw from the New West/Burnaby border.
             There will be games and entertainment and whatever else shows up.
           </Typography>
+          <Typography paragraph>
+            Once you sign up, please edit your profile (just add anything you might bring) then go to the event page and check the 'I will be attending!' box!
+          </Typography>
 
           <Typography>
             Bring some food and cold beverages and enjoy this summer day.
