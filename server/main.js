@@ -36,9 +36,9 @@ Meteor.startup(() => {
             email: SEED_USERNAME,
             password: SEED_PASSWORD,
             profile: {
-                firstName: 'firstName',
-                lastName: 'lastName',
-                displayName: '1displayName',
+                firstName: 'Jon',
+                lastName: 'Doe',
+                displayName: 'JD',
                 joinedDate: new Date(),
             }
         });

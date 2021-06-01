@@ -29,12 +29,17 @@ export const TaskForm = ({}) => {
       }
 
       const peopleGoing = EventsDb.find({ userId: user._id }).fetch();
-      const isGoing = peopleGoing[0].amGoing;
+      let isGoing = false;
+      console.log('peopleGoing',peopleGoing);
+
+      if (peopleGoing.length === 1) {
+        isGoing = peopleGoing[0].amGoing;
+      }
 
       return { isGoing };
   });
 
-  console.log('isGoing',isGoing);
+  console.log('isGoingxxx',isGoing);
 
 
   const handleSubmit = e => {
