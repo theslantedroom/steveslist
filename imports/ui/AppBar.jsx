@@ -103,7 +103,7 @@ export default function PrimarySearchAppBar() {
   };
 
   const handleDownloadApp = () => {
-    window.location.href = "https://production.sessionwire.platform.meteorapp.com/download";
+    // window.location.href = "https://production.sessionwire.platform.meteorapp.com/download";
   }
   const menuId = 'primary-search-account-menu';
   const renderMenu = (
