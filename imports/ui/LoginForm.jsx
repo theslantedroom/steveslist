@@ -45,7 +45,7 @@ export const LoginForm = () => {
             required
             type="text"
             name="username"
-            placeholder="Email or Display Name"
+            placeholder="Email"
             onChange={e => setUsername(e.target.value)}
             inputProps={{ 'aria-label': 'description' }} 
         />
