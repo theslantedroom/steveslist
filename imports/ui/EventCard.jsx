@@ -57,7 +57,7 @@ export default function EventCard() {
         }
 
         title="New West BBQ and 20 year High School reunion at Foreshore Park"
-        subheader="July 17, 2021"
+        subheader="July 17, 2021 - 12pm"
       />
       <CardMedia
         className={classes.media}
@@ -66,7 +66,7 @@ export default function EventCard() {
       />
       <CardContent>
         <Typography variant="body2" color="textSecondary" component="p">
-          Let's get the old New West crew back together for a catch up. It's been about 20 years since we graduated. Sign up add something to bring.
+          Let's get the old New West crew back together for a catch up. It's been around 20ish years since we graduated. Sign up and edit your profile to add something you will bring.
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
@@ -86,14 +86,19 @@ export default function EventCard() {
         <CardContent>
           <Typography paragraph>About:</Typography>
           <Typography paragraph>
-            Lets play and eat and be merry.
+            July 17, 2021 - 12pm @ Burnaby Fraser Foreshore Park (7751 Fraser Park Dr).  Meet at the BBQ and picnic tables area by the field.
           </Typography>
           <Typography paragraph>
+            On the river a stones throw from the New West/Burnaby border.
             There will be games and entertainment and whatever else shows up.
           </Typography>
 
           <Typography>
             Bring some food and cold beverages and enjoy this summer day.
+            Share this Link with the cool kids from New West in the early 2000's.
+          </Typography>
+          <Typography>
+            <a target='blank' href="https://www.google.com/maps/place/Burnaby+Fraser+Foreshore+Park/@49.1840909,-122.9981268,14z/data=!4m9!1m2!2m1!1sforeshore+park+picnic!3m5!1s0x5485d8aefd62d4db:0xe01bc8b93dd3a1b1!8m2!3d49.1840909!4d-122.9806173!15sChVmb3Jlc2hvcmUgcGFyayBwaWNuaWOSAQ9lY29sb2dpY2FsX3Bhcms">See Map</a>
           </Typography>
         </CardContent>
       </Collapse>
